@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Farooq AR">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Todo App</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Todo App</h1>
+        <div class="form_container">
+            <form id="todo_form">
+                <input type="text" id="todo_input" class="todo_input" autofocus>
+                <input type="submit" value="Add" class="btn">
+                <button type="button" id="btn_delete_selected" class="btn btn_delete_selected" >Delete Selected</button> 
+            </form>
+        </div>
+        <div class="main">
+            <ul id="todo_list">
+
+            </ul>
+        </div>
+        <div id="dialog" class="dialog">
+            <div class="overlay"></div>
+            <div class="content">
+                <h2>Edit Todo</h2>
+                <div>
+                    <input type="text" id="edit_todo">
+                </div>
+                <div>
+                    <button class="btn btn_delete_todo" id="btn_delete_todo">Delete</button>
+                    <button class="btn btn_save_todo" id="btn_save_todo">Save</button>
+                    <button class="btn btn_close_dialog" id="btn_close_dialog">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./app.js"></script>
+</body>
+
+</html>
